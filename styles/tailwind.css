@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-black;
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: #702ec2; /*default purple */
+    color: '#fff';
+  }
+
+  ::selection {
+    background: #702ec2; /*default purple */
+    color: '#fff';
+  }
+}
