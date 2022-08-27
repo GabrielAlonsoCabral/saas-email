@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Container from '../Container'
 import heroImg from '../../public/img/Network_Security.png'
 import CTAButton from '../CTAButton'
+import Div from '../Animations/Div'
 
 export default function Hero() {
   return (
@@ -9,14 +10,14 @@ export default function Hero() {
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl font-extrabold leading-snug tracking-tight text-purple lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
               Flexible email API service for developers
             </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 dark:text-gray-300">
+
+            <p className="py-5 text-xl leading-normal text-gray-600 dark:text-gray-300">
               Powerful APIs that enable you to send, receive, and track email
               effortlessly.
             </p>
-
             <div className="flex flex-wrap my-5 mt-10">
               <CTAButton
                 title="Get Started"
@@ -26,7 +27,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
+          <Div position="right">
             <Image
               src={heroImg}
               width="616"
@@ -36,34 +37,36 @@ export default function Hero() {
               loading="eager"
               placeholder="blur"
             />
-          </div>
+          </Div>
         </div>
       </Container>
       <Container>
-        <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-purple">2000+</span> customers
-            worldwide
-          </div>
+        <Div position="bottom">
+          <div className="flex flex-col justify-center">
+            <div className="text-xl text-center text-gray-700 dark:text-white">
+              Trusted by <span className="text-purple">2000+</span> customers
+              worldwide
+            </div>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <AmazonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <VerizonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <MicrosoftLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <NetflixLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <SonyLogo />
+            <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around text-gray-400">
+              <div className="pt-2">
+                <AmazonLogo />
+              </div>
+              <div className="">
+                <VerizonLogo />
+              </div>
+              <div className="pt-2">
+                <MicrosoftLogo />
+              </div>
+              <div className="pt-2">
+                <NetflixLogo />
+              </div>
+              <div className="pt-2">
+                <SonyLogo />
+              </div>
             </div>
           </div>
-        </div>
+        </Div>
       </Container>
     </>
   )

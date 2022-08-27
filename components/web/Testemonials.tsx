@@ -5,6 +5,7 @@ import Container from '../Container'
 import userOneImg from '../../public/img/user1.jpg'
 import userTwoImg from '../../public/img/user2.jpg'
 import userThreeImg from '../../public/img/user3.jpg'
+import Div from '../Animations/Div'
 
 export default function Testimonials() {
   return (
@@ -24,7 +25,8 @@ export default function Testimonials() {
             />
           </div>
         </div>
-        <div className="">
+
+        <Div position="right">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-neutral-800">
             <p className="text-2xl leading-normal ">
               Neque porro quisquam est qui dolorem <Mark>ipsum quia </Mark>{' '}
@@ -37,8 +39,8 @@ export default function Testimonials() {
               title="Fullstack Developer"
             />
           </div>
-        </div>
-        <div className="">
+        </Div>
+        <Div position="left">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-neutral-800">
             <p className="text-2xl leading-normal ">
               Neque porro quisquam est qui dolorem <Mark>ipsum quia </Mark>{' '}
@@ -51,7 +53,7 @@ export default function Testimonials() {
               title="Backend Engineer"
             />
           </div>
-        </div>
+        </Div>
       </div>
     </Container>
   )
