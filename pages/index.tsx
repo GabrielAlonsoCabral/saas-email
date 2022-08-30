@@ -31,16 +31,16 @@ export default function Home() {
       <Div position="bottom">
         <Hero />
       </Div>
-      <Div position="rigt">
+      <Div position="bottom">
         <SectionTitle pretitle="OUR BENEFITS" title="Increase Your Sales">
           Get your message to the right person at the right time with global
           infrastructure and industry expertise you can rely on.
         </SectionTitle>
       </Div>
-      <Div position="left">
+      <Div position="bottom">
         <Benefits data={benefitOne} />
       </Div>
-      <Div position="right">
+      <Div position="bottom">
         <Benefits imgPos="right" data={benefitTwo} />
       </Div>
       <Div position="bottom">
@@ -65,7 +65,7 @@ export default function Home() {
           Use this section to highlight your popular customers.
         </SectionTitle>
       </Div>
-      <Div position="left">
+      <Div position="bottom">
         <Testimonials />
       </Div>
       <Div>

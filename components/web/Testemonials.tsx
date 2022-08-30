@@ -26,7 +26,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <Div position="right">
+        <Div position="bottom">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-neutral-800">
             <p className="text-2xl leading-normal ">
               Neque porro quisquam est qui dolorem <Mark>ipsum quia </Mark>{' '}
@@ -40,7 +40,7 @@ export default function Testimonials() {
             />
           </div>
         </Div>
-        <Div position="left">
+        <Div position="bottom">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-neutral-800">
             <p className="text-2xl leading-normal ">
               Neque porro quisquam est qui dolorem <Mark>ipsum quia </Mark>{' '}
