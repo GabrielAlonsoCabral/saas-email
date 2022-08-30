@@ -41,7 +41,7 @@ export default function Benefits(props: IBenefitsProps) {
         }`}
       >
         <div>
-          <Div position={props.imgPos === 'right' ? 'right' : 'left'}>
+          <Div position={'bottom'}>
             <div className="flex flex-col w-full mt-4">
               <h3 className="max-w-2xl mt-3 text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
                 {data.title}
@@ -55,10 +55,7 @@ export default function Benefits(props: IBenefitsProps) {
 
           <div className="w-full mt-5">
             {data.bullets.map((item, index) => (
-              <Div
-                key={index}
-                position={props.imgPos === 'right' ? 'right' : 'left'}
-              >
+              <Div key={index} position={'bottom'}>
                 <Benefit
                   imgPos={props.imgPos}
                   title={item.title}
