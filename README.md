@@ -2,7 +2,7 @@
 
 ## Preview
 
-https://citizens-email.vercel.app/
+https://saas-email.vercel.app/
 
 ## Usage
 
