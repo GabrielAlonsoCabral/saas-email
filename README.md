@@ -1,5 +1,9 @@
 # Next Typescript Tailwind
 
+
+  Developed by: <a href="https://www.github.com/gabrielAlonsoCabral">@GabrielAlonsoCabral</a>  
+  <br/>
+
 ## Preview
 
 https://saas-email.vercel.app/
